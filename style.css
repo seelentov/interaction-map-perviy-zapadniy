@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+  margin: 0
+}
+
+.interaction-map {
+  font-family: Montserrat, sans-serif;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.interaction-map__map {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.interaction-map__items{
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  scale: 1;
+}
+
+.interaction-map__items-item {
+  position: absolute;
+  font-size: 8px;
+  padding: 0;
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+  padding: 4px;
+}
+
+.interaction-map__items-item-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.interaction-map__items-item svg{
+  transition: all .2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.interaction-map__items-item svg:hover {
+  fill: white !important;
+}
+
+.interaction-map__items-item.interaction-map__items-item--close svg {
+  fill: red;
+}
+
+.interaction-map__items-item.interaction-map__items-item--open svg {
+  fill: #81a837;
+}
+
+.interaction-map__items-item.interaction-map__items-item--buy svg {
+  fill: #639309;
+}
+
+
+.interaction-map__items-item:active svg{
+  fill: black !important;
+}
+
+.interaction-map__items-item img {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  z-index: 9;
+}
+
+.interaction-map__items-item p {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  z-index: 10;
+}
+
+.interaction-map__info {
+  transition: all .2s;
+  position: absolute;
+  border-radius: 20px;
+  width: 250px;
+  top: 10px;
+  right: 20px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.interaction-map__info h3 {
+  margin: 0;
+  padding: 0;
+
+}
+
+.interaction-map__info h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 27px;
+}
+
+
+.interaction-map__info ul {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.interaction-map__info ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+}
+
+.interaction-map__info ul li span {
+  font-weight: 400;
+}
+
+.interaction-map__info button {
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
+  padding: 5px 0;
+  transition: background-color .2s;
+  cursor: pointer;
+  border: none;
+}
+
+.interaction-map__info button:hover {
+  background-color: black;
+}
+
+.interaction-map__info button:active {
+  color: black;
+}
+
+.interaction-map__info--hide{
+  display: none;
+}
