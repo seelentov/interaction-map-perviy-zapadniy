@@ -15,21 +15,23 @@ body {
   display: flex;
   height: 100%;
   width: 100%;
-}
-
-.interaction-map__items {
-  overflow: scroll;
-  height: 100%;
-  width: 100%;
-  scale: 1;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-
-.interaction-map__items::-webkit-scrollbar {
+.interaction-map__map::-webkit-scrollbar {
   display: none;
 }
+
+.interaction-map__items {
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  scale: 1;
+}
+
+
+
 
 
 .interaction-map__items-item {

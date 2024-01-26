@@ -31,4 +31,12 @@ export default (component) => {
     container.scrollLeft = scrollLeft - walkX
     container.scrollTop = scrollTop - walkY
   })
+
+  //container.addEventListener('wheel', (e) => {
+  //  e.preventDefault();
+  //  const zoomSpeed = 0.1; 
+  //  container.scrollLeft += e.deltaY;
+  //  container.scrollTop += e.deltaX;
+  //  container.style.transform = `scale(${1 + e.deltaY * zoomSpeed})` 
+  //});
 }
