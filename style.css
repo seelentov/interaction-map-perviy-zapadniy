@@ -17,12 +17,20 @@ body {
   width: 100%;
 }
 
-.interaction-map__items{
+.interaction-map__items {
   overflow: scroll;
   height: 100%;
   width: 100%;
   scale: 1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+
+.interaction-map__items::-webkit-scrollbar {
+  display: none;
+}
+
 
 .interaction-map__items-item {
   position: absolute;
@@ -38,18 +46,19 @@ body {
   padding: 4px;
 }
 
-.interaction-map__items-item-wrapper{
+.interaction-map__items-item-wrapper {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.interaction-map__items-item svg{
+.interaction-map__items-item svg {
   transition: all .2s;
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .interaction-map__items-item svg:hover {
   fill: white !important;
 }
@@ -67,7 +76,7 @@ body {
 }
 
 
-.interaction-map__items-item:active svg{
+.interaction-map__items-item:active svg {
   fill: black !important;
 }
 
@@ -151,6 +160,6 @@ body {
   color: black;
 }
 
-.interaction-map__info--hide{
+.interaction-map__info--hide {
   display: none;
 }
